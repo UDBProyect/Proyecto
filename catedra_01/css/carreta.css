@@ -1,0 +1,103 @@
+header{
+    background-color: black;
+    color: #D32F2F;
+    text-align: center;
+    margin: 25px;
+    padding: 1rem;
+    font-family: 'kellyslab', sans-serif;
+    font-size: 1.5em;
+    size: 2px;
+    border: 10px solid white; 
+}
+
+body{
+    background-color: #757575;
+    text-align: center;
+    color: whitesmoke;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.leyenda{
+    color: red;
+    width: 0 auto;
+}
+
+p{
+    color: whitesmoke;
+    text-align: center;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    border: 10px solid white; 
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    align-items: center;
+    background-image: url(imgcss/carreta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    image-orientation: none;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+h1{
+    color: red;
+    width: 0 auto;
+    text-align: center;
+    font-family: 'kellyslab', sans-serif;
+    box-shadow: rgba(255, 255, 255, 0.5);
+}
+
+header::first-letter {
+    font-size: 200%;
+    color: darkred;
+}
+
+h1::first-letter {
+    font-size: 170%;
+    color: darkred;
+}
+
+p::first-letter {
+    font-size: 150%;
+    color: #26A69A;
+}
+
+h4::first-line {
+    font-size: 110%;
+    color: whitesmoke;
+    font-style: bold;
+    text-transform: uppercase;
+
+}
+
+.boton {
+    display: inline-block;
+    background-color: black;
+    color: #D32F2F;
+    padding: 5px 10px; 
+    border: 2px solid white;
+    border-radius: 5px; 
+    font-family: 'kellyslab', sans-serif;
+    font-size: 16px; 
+    text-decoration: none; 
+}
+
+.boton a {
+    color: #D32F2F; 
+    text-decoration: none; 
+}
+
+.boton:hover {
+    background-color: #ffffff; 
+    color: black; 
+}

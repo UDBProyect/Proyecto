@@ -1,0 +1,213 @@
+header{
+    background-color: black;
+    color: #D32F2F;
+    text-align: center;
+    margin: 25px;
+    padding: 1rem;
+    font-family: 'kellyslab', sans-serif;
+    font-size: 1.5em;
+    size: 2px;
+    border: 10px solid white; 
+}
+
+body{
+    background-color: #757575;
+    text-align: center;
+    color: whitesmoke;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.leyenda{
+    color: red;
+    width: 0 auto;
+}
+
+p{
+    color: whitesmoke;
+    text-align: center;
+    margin: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    border: 10px solid white; 
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    align-items: center;
+    background-image: url(imgcss/padre.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    image-orientation: none;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+h1{
+    color: red;
+    width: 0 auto;
+    text-align: center;
+    font-family: 'kellyslab', sans-serif;
+    box-shadow: rgba(255, 255, 255, 0.5);
+}
+
+header::first-letter {
+    font-size: 200%;
+    color: darkred;
+}
+
+h1::first-letter {
+    font-size: 170%;
+    color: darkred;
+}
+
+p::first-letter {
+    font-size: 150%;
+    color: #26A69A;
+}
+
+h4::first-line {
+    font-size: 110%;
+    color: whitesmoke;
+    font-style: bold;
+    text-transform: uppercase;
+
+}
+
+.boton {
+    display: inline-block;
+    background-color: black;
+    color: #D32F2F;
+    padding: 5px 10px; 
+    border: 2px solid white;
+    border-radius: 5px; 
+    font-family: 'kellyslab', sans-serif;
+    font-size: 16px; 
+    text-decoration: none; 
+}
+
+.boton a {
+    color: #D32F2F; 
+    text-decoration: none; 
+}
+
+.boton:hover {
+    background-color: #ffffff; 
+    color: black; 
+}
+
+/* Responsive */
+
+/* Celu */
+@media (max-width: 600px) {
+    header {
+        margin: 10px;
+        padding: 0.5rem;
+        font-size: 1.2em;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    .leyenda {
+        width: 100%;
+    }
+
+    p {
+        margin: 10px;
+        font-size: 1em;
+    }
+
+    article {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .boton {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        margin: 15px;
+        padding: 0.75rem;
+        font-size: 1.4em;
+    }
+
+    body {
+        margin: 15px;
+    }
+
+    .leyenda {
+        width: 100%;
+    }
+
+    p {
+        margin: 15px;
+        font-size: 1.2em;
+    }
+
+    article {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    .boton {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+}
+
+/* PC */
+@media (min-width: 1025px) {
+    header {
+        margin: 25px;
+        padding: 1rem;
+        font-size: 1.5em;
+    }
+
+    body {
+        margin: 25px;
+    }
+
+    .leyenda {
+        width: auto;
+    }
+
+    p {
+        margin: 25px;
+        font-size: 1.5em;
+    }
+
+    article {
+        width: 100%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .boton {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+}

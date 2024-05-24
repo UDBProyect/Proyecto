@@ -1,0 +1,150 @@
+label.toggle, [id^=drop]{
+    display: none;
+}
+
+/*Reglas  de estilo básica para el menú*/
+nav{
+    margin: 0;
+    padding: 0;
+    background-color: #254441;
+}
+
+#logo{
+    display: block;
+    padding: 0 30px;
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+nav ul{
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li{
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: #254441;
+}
+
+nav a{
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+nav a:hover{background-color: #000;}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover >ul{
+    display: block;
+}
+
+/*Elementos del segundo nivel*/
+nav ul ul li{
+    width: 170px;
+    float: none;
+    display: block;
+    position: relative;
+}
+
+/*Elementos del tercer nivel*/
+nav ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+nav:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*Media Queries*/
+@media all and (max-width: 768px){
+    nav {margin: 0;}
+
+    #logo{
+        display: inline-block;
+        padding: 0 0 0 20px;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+        border-top: 1px solid white;
+    }
+    label.toggle{
+        display: block;
+        background-color: #254441;
+        padding: 0 20px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+    label.icono{
+        background-color: rgba(0, 0, 0,0.3);
+        border-left: 1px solid white;
+        display: inline-block;
+        float: right;
+    }
+    .toggle:hover{background-color: #000;}
+
+    .menu{
+        display: none;
+    }
+    [id^=drop]:checked + ul{
+        display: block;
+        width: 100%;
+    }
+    .toggle + a{
+        display: none;
+    }
+    /*Listas de los niveles internos*/
+    nav ul ul{
+        float: none;
+        position: static;
+        color: #fff;
+    }
+    /*Elementos de los niveles internos*/
+    nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    /*Para los elementos del tercer nivel*/
+    nav ul ul ul li{position: static;}
+
+    /*Los niveles internos ya no se desplegaran cuando se haga hover sobre el elemento padre sino solo cuando se active el echeckbox*/
+    nav ul ul li:hover >ul, 
+    nav ul li:hover >ul{display: none;}
+
+    /*Rellenos para los elementos del segundo nivel*/
+    nav ul ul.toggle, 
+    nav ul ul a{padding: 0 40px;}
+
+    /*Rellenos para los elementos del segundo nivel*/
+    nav ul ul ul a{padding: 0 80px;}
+
+    nav a:hover, 
+    nav ul ul ul a{background-color: #000;}
+
+    nav ul li ul li.toggle, 
+    nav ul ul a{background-color: #212121;}
+}
